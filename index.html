@@ -28,6 +28,9 @@
             </button>
         </div>
     </div>
+    <div class="spinner-border spinner-hack" role="status">
+        <span class="sr-only"></span>
+    </div>
     <div id="twitter-timeline-container">
         <a
                 class="twitter-timeline"
@@ -90,6 +93,11 @@
 </body>
 
 <style>
+    .spinner-hack {
+        position: absolute;
+        margin-top: 80px;
+        z-index: -2;
+    }
     .icon-size {
         width: 40px;
         height: 40px;
