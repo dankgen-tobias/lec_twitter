@@ -39,8 +39,11 @@
             </button>
         </div>
     </div>
-    <div class="spinner-border spinner-hack" role="status">
+    <div class="spinner-border" id="spinner-workaround" role="status">
         <span class="sr-only"></span>
+    </div>
+    <div id="not-loading-info">
+        If the page does not load, add lecbanter.gg to the whitelist of your ad block. Then reload the page.
     </div>
     <div id="twitter-timeline-container">
         <a
@@ -117,7 +120,7 @@
 </body>
 
 <style>
-    .spinner-hack {
+    #spinner-workaround {
         position: absolute;
         margin-top: 80px;
         z-index: -2;
@@ -129,6 +132,29 @@
 
     .twitter-timeline {
         width: 100vw !important;
+    }
+
+
+    #not-loading-info {
+        position: absolute;
+        margin-top: 130px;
+        z-index: -2;
+        animation: 1s fadeIn;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        visibility: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+          opacity: 1;
+          visibility: visible;
+      }
     }
 
     #menu {
