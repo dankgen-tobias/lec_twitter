@@ -22,7 +22,7 @@
     <link href="icons8-twitter-144-lec-colored.png" rel="icon" type="image/x-icon">
 </head>
 
-<body style="overflow-y: scroll">
+<body id="body">
 <div id="main-container">
     <div id="menu">
         <a class="icon-size" href="https://twitter.com/i/lists/1617212935067017216">
@@ -39,7 +39,7 @@
             </button>
         </div>
     </div>
-    <div class="spinner-border" id="spinner-workaround" role="status">
+    <div class="spinner-border text-light" id="spinner-workaround" role="status">
         <span class="sr-only"></span>
     </div>
     <div id="not-loading-info">
@@ -49,6 +49,7 @@
         <a
                 class="twitter-timeline"
                 data-chrome="noheader"
+                data-theme="dark"
                 href="https://twitter.com/dankgen_tobias/lists/1617212935067017216?ref_src=twsrc%5Etfw"
         ></a>
     </div>
@@ -85,7 +86,7 @@
                     <h5>
                         Which accounts are displayed here?
                     </h5>
-                    <p>The entire list can be seen <a href="https://twitter.com/i/lists/1617212935067017216/members"> at Twitter</a>.</p>
+                    <p>The entire list can be seen at <a href="https://twitter.com/i/lists/1617212935067017216/members">Twitter</a>.</p>
                     <h5>
                         Why is player/coach/whoever xyz missing in the list?
                     </h5>
@@ -120,6 +121,14 @@
 </body>
 
 <style>
+    .modal-content {
+        background: #181a1b;
+        color: white;
+    }
+    #body {
+        overflow-y: scroll;
+        background: #181a1b;
+    }
     #spinner-workaround {
         position: absolute;
         margin-top: 80px;
